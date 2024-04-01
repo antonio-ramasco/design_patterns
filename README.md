@@ -1,1 +1,1 @@
-The goal of this project is to create a library of Design Pattern to use in real life projects.
+The goal of this project is to create a library of design patterns to use everyday in real projects.The pattern should require minimal code to be used.
