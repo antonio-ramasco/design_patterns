@@ -4,7 +4,7 @@ be sure that
 2. all code is pep-8, validated using flake-8 (black) 
 3. Class Diagrams
 3.1 Observer Pattern
-![Observer pattern](!(documentation/objserver.jpg?raw=true "Observer Pattern")
+![Observer pattern](!(documentation/observer.jpg?raw=true "Observer Pattern Class Diagram")
 4. TODO:
 <br/>
 4.1. add class diagrams from structure chapters from book Design Patterns: Elements of Reusable Object-Oriented Software"<br/>
