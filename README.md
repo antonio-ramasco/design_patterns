@@ -13,50 +13,50 @@ Be sure that
 ## Class Diagrams<br/>
 ### Creational
 * Abstract Factory
-img src=![Abstract Factory Pattern Class Diagram](documentation/abstract_factory.JPG)
+![Abstract Factory Pattern Class Diagram](documentation/abstract_factory.JPG)
 * Builder
-img src=![Builder Pattern Class Diagram](documentation/builder.JPG)
+![Builder Pattern Class Diagram](documentation/builder.JPG)
 * Factory Method
-img src=![Factory Method Pattern Class Diagram](documentation/factory_method.JPG)
+![Factory Method Pattern Class Diagram](documentation/factory_method.JPG)
 * Singleton
-img src=![Singleton Pattern Class Diagram](documentation/singleton.JPG)
+![Singleton Pattern Class Diagram](documentation/singleton.JPG)
 * Prototype
-img src=![Prototype Pattern Class Diagram](documentation/prototype.JPG)
+![Prototype Pattern Class Diagram](documentation/prototype.JPG)
 ### Structural
 * Adapter
-img src=![Adapter Pattern Class Diagram](documentation/adapter.JPG)
+![Adapter Pattern Class Diagram](documentation/adapter.JPG)
 * Bridge
-img src=![Bridge Pattern Class Diagram](documentation/bridge.JPG)
+![Bridge Pattern Class Diagram](documentation/bridge.JPG)
 * Composite
-img src=![Composite Pattern Class Diagram](documentation/composite.JPG)
+![Composite Pattern Class Diagram](documentation/composite.JPG)
 * Decorator
-img src=![Decorator Pattern Class Diagram](documentation/decorator.JPG)
+![Decorator Pattern Class Diagram](documentation/decorator.JPG)
 * Facade
-img src=![Facade Pattern Class Diagram](documentation/facade.JPG)
+![Facade Pattern Class Diagram](documentation/facade.JPG)
 * Flyweight
-img src=![Flyweight Pattern Class Diagram](documentation/flyweight.JPG)
+![Flyweight Pattern Class Diagram](documentation/flyweight.JPG)
 * Proxy
-img src=![Proxy Pattern Class Diagram](documentation/proxy.JPG)
+![Proxy Pattern Class Diagram](documentation/proxy.JPG)
 
 ### Behavioural
 * Chain Of Responsibility
-img src=![Chain Of Responsibility Pattern Class Diagram](documentation/chain_of_responsibility.JPG)
+![Chain Of Responsibility Pattern Class Diagram](documentation/chain_of_responsibility.JPG)
 * Interpreter
-img src=![Interpreter Pattern Class Diagram](documentation/interpreter.JPG)
+![Interpreter Pattern Class Diagram](documentation/interpreter.JPG)
 * Iterator
-img src=![Iterator Pattern Class Diagram](documentation/iterator.JPG)
+![Iterator Pattern Class Diagram](documentation/iterator.JPG)
 * Mediator
-img src=![Mediator Pattern Class Diagram](documentation/mediator.JPG)
+![Mediator Pattern Class Diagram](documentation/mediator.JPG)
 * Memento
-img src=![Memento Pattern Class Diagram](documentation/memento.JPG)
+![Memento Pattern Class Diagram](documentation/memento.JPG)
 * Observer
-img src=![Observer Pattern Class Diagram](documentation/observer.JPG)
+![Observer Pattern Class Diagram](documentation/observer.JPG)
 * State
-img src=![State Pattern Class Diagram](documentation/state.JPG)
+![State Pattern Class Diagram](documentation/state.JPG)
 * Strategy
-img src=![Strategy Pattern Class Diagram](documentation/strategy.JPG)
+![Strategy Pattern Class Diagram](documentation/strategy.JPG)
 * template method
-img src=![Template Method Pattern Class Diagram](documentation/template_method.JPG)
+![Template Method Pattern Class Diagram](documentation/template_method.JPG)
 * visitor
-img src=![Visitor Pattern Class Diagram](documentation/visitor.JPG)
+![Visitor Pattern Class Diagram](documentation/visitor.JPG)
 
