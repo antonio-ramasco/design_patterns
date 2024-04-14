@@ -10,14 +10,14 @@ Be sure that
 5. Code is commented when needed<br/>
 
 # Documentation
-##Class Diagrams<br/>
-###Creational
+## Class Diagrams<br/>
+### Creational
 * abstract_factory
 * builder
 * factory method
 * singleton
 * prototype
-###Structural
+### Structural
 * adapter
 * bridge
 * composite
@@ -26,7 +26,7 @@ Be sure that
 * flyweight
 * proxy
 * state
-###Behavioural
+### Behavioural
 * chain of responsibility
 * interpreter
 * iterator
