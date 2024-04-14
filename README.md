@@ -12,31 +12,51 @@ Be sure that
 # Documentation
 ## Class Diagrams<br/>
 ### Creational
-* abstract_factory
-* builder
-* factory method
-* singleton
-* prototype
+* Abstract Factory
+img src=![Abstract Factory Pattern Class Diagram](documentation/abstract_factory.JPG)
+* Builder
+img src=![Builder Pattern Class Diagram](documentation/builder.JPG)
+* Factory Method
+img src=![Factory Method Pattern Class Diagram](documentation/factory_method.JPG)
+* Singleton
+img src=![Singleton Pattern Class Diagram](documentation/singleton.JPG)
+* Prototype
+img src=![Prototype Pattern Class Diagram](documentation/prototype.JPG)
 ### Structural
-* adapter
-* bridge
-* composite
-* decorator
-* facade
-* flyweight
-* proxy
-* state
+* Adapter
+img src=![Adapter Pattern Class Diagram](documentation/adapter.JPG)
+* Bridge
+img src=![Bridge Pattern Class Diagram](documentation/bridge.JPG)
+* Composite
+img src=![Composite Pattern Class Diagram](documentation/composite.JPG)
+* Decorator
+img src=![Decorator Pattern Class Diagram](documentation/decorator.JPG)
+* Facade
+img src=![Facade Pattern Class Diagram](documentation/facade.JPG)
+* Flyweight
+img src=![Flyweight Pattern Class Diagram](documentation/flyweight.JPG)
+* Proxy
+img src=![Proxy Pattern Class Diagram](documentation/proxy.JPG)
+
 ### Behavioural
-* chain of responsibility
-* interpreter
-* iterator
-* mediator
-* memento
-* observer
-Observer Pattern Class Diagram 
-img src=![Observer Pattern Class Diagram](documentation/observer.jpg)
-* state
-* strategy
+* Chain Of Responsibility
+img src=![Chain Of Responsibility Pattern Class Diagram](documentation/chain_of_responsibility.JPG)
+* Interpreter
+img src=![Interpreter Pattern Class Diagram](documentation/interpreter.JPG)
+* Iterator
+img src=![Iterator Pattern Class Diagram](documentation/iterator.JPG)
+* Mediator
+img src=![Mediator Pattern Class Diagram](documentation/mediator.JPG)
+* Memento
+img src=![Memento Pattern Class Diagram](documentation/memento.JPG)
+* Observer
+img src=![Observer Pattern Class Diagram](documentation/observer.JPG)
+* State
+img src=![State Pattern Class Diagram](documentation/state.JPG)
+* Strategy
+img src=![Strategy Pattern Class Diagram](documentation/strategy.JPG)
 * template method
+img src=![Template Method Pattern Class Diagram](documentation/template_method.JPG)
 * visitor
+img src=![Visitor Pattern Class Diagram](documentation/visitor.JPG)
 
