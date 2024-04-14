@@ -1,21 +1,18 @@
-from behavioral.observer import (
-    ConcreteElementA,
-    ConcreteElementB,
-    ConcreteVisitor1,
-    ConcreteVisitor2,
-    client_code,
-)
-
-
+from behavioral.observer import ConcreteSubject, ConcreteObserver
 def test_observer():
-    components = [ConcreteElementA()]
+    subject = ConcreteSubject("subject1")
+    subject.set_state("hello")
+    observer_a = ConcreteObserver("A")
 
-    visitor1 = ConcreteVisitor1()
-    assert client_code(components, visitor1) == ["ConcreteVisitor1.operation A"]
+    subject.attach(observer_a)
+    assert subject.notify()==['updated observer A with message subject1:hello']
 
-    components.append(ConcreteElementB())
-    visitor2 = ConcreteVisitor2()
-    assert client_code(components, visitor2) == [
-        "ConcreteVisitor2.operation A",
-        "ConcreteVisitor2.operation B",
-    ]
+    subject.set_state("everybody")
+    assert subject.notify()==['updated observer A with message subject1:everybody']
+
+    observer_a = ConcreteObserver("B")
+    subject.attach(observer_a)
+    subject.set_state("hello again")
+
+    assert subject.notify()==['updated observer A with message subject1:hello again', 'updated observer B with message subject1:hello again']
+

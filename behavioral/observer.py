@@ -1,57 +1,53 @@
+from __future__ import annotations
 from abc import ABC, abstractmethod
+from random import randrange
+from typing import List
 
 
-class Element(ABC):
+class Subject:
+    def __init__(self):
+        self._observers = []
+
+    def attach(self, observer):
+        self._observers.append(observer)
+
+    def detach(self, observer: Observer) -> None:
+        self._observers.remove(observer)
+
+    def notify(self) -> None:
+        results=[]
+        for observer in self._observers:
+            observer.update(self)
+            results.append(observer.observer_state)
+        return results
+
+class ConcreteSubject(Subject):
+    def __init__(self, subject_name):
+        super(ConcreteSubject, self).__init__()
+        self._state = None
+        self._subject_name=subject_name
+
+    def get_state(self):
+        return self._subject_name+":"+self._state
+
+    def set_state(self, state):
+        self._state=state
+
+
+class Observer(ABC):
     @abstractmethod
-    def accept(self, visitor) -> None:
+    def update(self, subject):
         pass
 
 
-class ConcreteElementA(Element):
-    def accept(self, visitor):
-        return visitor.visit_concrete_component_a(self)
+class ConcreteObserver(Observer):
+    def __init__(self, name):
+        self._name=name
+        self._observer_state=None
 
-    def operation_a(self):
-        return "operation A"
+    def update(self, subject):
+        self._observer_state=f"updated observer {self._name} with message {subject.get_state()}"
 
-
-class ConcreteElementB(Element):
-    def accept(self, visitor):
-        return visitor.visit_concrete_component_b(self)
-
-    def operation_b(self):
-        return "operation B"
-
-
-
-class Visitor(ABC):
-    @abstractmethod
-    def visit_concrete_component_a(self, element):
-        pass
-
-    @abstractmethod
-    def visit_concrete_component_b(self, element):
-        pass
-
-class ConcreteVisitor1(Visitor):
-    def visit_concrete_component_a(self, element) -> None:
-        return f"ConcreteVisitor1.{element.operation_a()}"
-
-    def visit_concrete_component_b(self, element) -> None:
-        return f"ConcreteVisitor1.{element.operation_b()}"
-
-
-class ConcreteVisitor2(Visitor):
-    def visit_concrete_component_a(self, element) -> None:
-        return f"ConcreteVisitor2.{element.operation_a()}"
-
-    def visit_concrete_component_b(self, element) -> None:
-        return f"ConcreteVisitor2.{element.operation_b()}"
-
-
-def client_code(components, visitor):
-    results=[]
-    for component in components:
-        results.append(component.accept(visitor))
-    return results
-
+    @property
+    def observer_state(self):
+        return self._observer_state
